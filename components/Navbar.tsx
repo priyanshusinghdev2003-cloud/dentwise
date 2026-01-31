@@ -5,6 +5,7 @@ import { CalendarIcon, CrownIcon, HomeIcon, MicIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { shadcn } from "@clerk/themes";
 
 function Navbar() {
   const { user } = useUser();
@@ -87,7 +88,7 @@ function Navbar() {
               </span>
             </div>
 
-            <UserButton />
+            <UserButton appearance={{ theme: shadcn }} />
           </div>
         </div>
       </div>
